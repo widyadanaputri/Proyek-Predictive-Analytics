@@ -3,7 +3,7 @@
 
 Implementasi pembelajaran modul *Machine Learning* Terapan
 
-## Project Domain
+## *Project Domain*
 
 Asuransi kesehatan atau *health insurance* merupakan salah satu jenis asuransi yang paling banyak dimiliki oleh orang-orang saat ini. Selain karena tujuan serta perlindungan yang ditawarkan, jenis asuransi yang satu ini juga merupakan yang paling dekat dengan kehidupan banyak orang.
 Asuransi Kesehatan adalah jenis asuransi yang menanggung biaya pengobatan. Seseorang yang telah mengambil polis asuransi kesehatan mendapatkan perlindungan asuransi kesehatan dengan membayar sejumlah premi tertentu. Ada banyak faktor yang menentukan premi asuransi kesehatan. 
@@ -14,17 +14,17 @@ Sama seperti usia, ada banyak faktor lain yang dapat mempengaruhi premi untuk po
 
 ## *Business Understanding*
 
-*1. Problem statements*
+#### *1. Problem statements*
 Dari *background* di atas dapat disimpulkan beberapa rumusan masalah di antaranya:
 - Bagaimana cara menganalisis data pada asurasi kesehatan ?
 - Bagaimana cara mengolah data agar dapat dilatih dengan baik oleh model ?
 - Bagaimana cara membangun model yang dapat memprediksi *time series medical insurance* dengan akurasi yang baik ?
-*2. Goals*
+##### *2. Goals*
 Tujuan dari proyek ini adalah:
 - Dapat memprediksi harga *premium medical insurance* dengan menggunakan model *machine learning*
 - Dapat mengolah data dengan optimal agar dapat dilatih dengan baik oleh model *machine learning*
 - Dapat menemukan model yang dapat memprediksi *time series medical insurance* dengan tingkat akurasi yang baik
-*3. Solution Statements*
+#### *3. Solution Statements*
 Dari *problem statements* dan *goals* yang telah dijabarkan, berikut solusi yang dapat dilakukan:
 - Melakukan analisa dengan cara menangani *missing value* pada data, kemudian mencari korelasi pada data, menangani *outlier* pada data, dan melakukan normalisasi pada data. Selain itu dilakukan eksplorasi dan pemrosesan pada data dengan memvisualisasikannya.
 - Membuat model regresi untuk memprediksi harga asuransi kesehatan. Dalam hal ini akan digunakan algoritma *Support Vector Regression, K-Nearest Neighbor,* dan *Gradient Boosting Regression*.
@@ -73,7 +73,7 @@ n = jumlah titik data
 Yi = nilai sesungguhnya
 Yi_hat = nilai prediksi
 
-Dari hasil perbandingan tiga model yang telah digunakan, maka didapatkan bahwa model *SVR* (*Support Vector Regression*) menghasilkan performa lebih baik atau optimal dibandingkan dengan *Gradient Boosting model* dan *K-Nearest Neighbor*. Model tersebut dapat membantu untuk memprediksi asuransi kesehatan yang dibutuhkan.
+Dari hasil perbandingan tiga model yang telah digunakan, maka didapatkan bahwa model *SVR* (Support Vector Regression)* menghasilkan performa lebih baik atau optimal dibandingkan dengan *Gradient Boosting model* dan *K-Nearest Neighbor*. Model tersebut dapat membantu untuk memprediksi asuransi kesehatan yang dibutuhkan.
 
 |                  | *train_mse* | *test_mse* |
 |------------------|-----------|----------|
@@ -82,7 +82,8 @@ Dari hasil perbandingan tiga model yang telah digunakan, maka didapatkan bahwa m
 | *GradientBoosting* | 8867749.642456   | 13164618.870484 |
 
 Berdasarkan tabel *mse* di atas dapat dilihat bahwa algoritma SVR memiliki nilai *mse* pada *data train* sebesar 36083714.028427 dan pada *data test* sebesar 38274258.620152. Kemudian pada algoritma KNN memiliki nilai *mse* pada *data train* sebesar 12902609.86375 dan pada *data test* sebesar 17283886.650035. Dan pada algoritma *Gradient Boosting* memiliki nilai *mse* pada *data train* sebesar 8867749.642456 dan pada *data test* sebesar 13164618.870484. Sehingga, dapat disimpulkan bahwa pada proyek kali ini penggunaan model SVR menghasilkan performa yang optimal. 
-Berikut ini hasil dari plot visualisasi *mse* (*mean squared error*).
+Berikut ini hasil dari plot visualisasi *mse* *(mean squared error)*.
+
 ![image](https://user-images.githubusercontent.com/112928081/191668908-75dc9462-1f5c-44e2-8221-bb08c2616bb3.png)
 
 
