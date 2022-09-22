@@ -48,13 +48,9 @@ Teknik *data preparation* yang dilakukan di antaranya :
 
 ## Modelling
 1. *Support Vector Regression Support Vector Regression* mempunyai prinsip yang sama dengan SVM. SVM sendiri adalah salah satu algoritma *machine learning* dengan pendekatan *supervised learning* yang bekerja dengan mencari *hyperplane* atau fungsi pemisah terbaik untuk memisahkan kelas. Algoritma SVM memiliki konsep dan dasar matematis yang mapan sehingga menjadi algoritma yang populer. Sementara SVR mencari jalan yang dapat menampung sebanyak mungkin sampel di jalan. *Hyperparameter* yang digunakan pada model ini sebagai berikut :
-- *C* : parameter regularisasi yang digunakan untuk menukar klasifikasi yang benar dalam hal ini dari contoh training terhadap maksimalisasi margin dengan fungsi keputusan
-- *kernel* : berfungsi untuk menghitung kernel matriks sebelumnya
-- *gamma* : parameter yang digunakan dalam menentukan seberapan jauh pengaruh dari contoh pelatihan atau training yang mana ketika nilainya rendah berarti jauh dan jika nilainya tinggi itu mengartikan dekat. 
-Sementara nilai pada tiap hyperparameter setiap algoritma yaitu:
-C: [0.001, 0.01, 0.1, 10, 100, 1000]
-gamma: [0.3, 0.03, 0.003, 0.0003]
-kernel: ['rbf']
+- *C* : parameter regularisasi yang digunakan untuk menukar klasifikasi yang benar dalam hal ini dari contoh training terhadap maksimalisasi margin dengan fungsi keputusan, dengan nilai *hyperparameter* C: [0.001, 0.01, 0.1, 10, 100, 1000]
+- *kernel* : berfungsi untuk menghitung kernel matriks sebelumnya, dengan nilai *hyperparameter* kernel: ['rbf']
+- *gamma* : parameter yang digunakan dalam menentukan seberapan jauh pengaruh dari contoh pelatihan atau training yang mana ketika nilainya rendah berarti jauh dan jika nilainya tinggi itu mengartikan dekat, dengan nilai *hyperparameter* gamma: [0.3, 0.03, 0.003, 0.0003]
 
 2. *Gradient Boosting Regression Gradient Boosting* merupakan algoritma *machine learning* yang menggunakan teknik *ensembel learning* dari *decision tree* untuk memprediksi nilai. *Gradient Boosting Regression* sangat mampu menangani *pattern* yang kompleks dan data ketika linear model tidak dapat menangani. Berikut *hyperparameter* yang digunakan pada model ini:
 - *learning_rate* : digunakan untuk menghitung nilai koreksi bobot ketika waktu proses training yang pada umumnya nilai dari *learning rate* berkisar di antara 0 hingga 1
