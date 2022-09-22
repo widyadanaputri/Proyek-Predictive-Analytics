@@ -85,6 +85,6 @@ Berikut ini hasil dari plot visualisasi *mse* *(mean squared error)*.
 ![image](https://user-images.githubusercontent.com/112928081/191668908-75dc9462-1f5c-44e2-8221-bb08c2616bb3.png)
 
 
-## *References*
+## References
 1. PT Mahir Teknologi (SMART), Semua. 2022. Kenali Hyperparameter Tuning dalam Machine Learning. https://codingstudio.id/hyperparameter-tuning/
 2. PT. NOMIC INDONESIA, JOJO. 2021. *Health Insurance*: Definisi, Jenis dan Manfaat yang Ditawarkan. https://www.jojonomic.com/blog/health-insurance/
